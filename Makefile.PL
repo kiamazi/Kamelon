@@ -16,6 +16,18 @@ WriteMakefile(
    NAME              => 'Syntax::Kamelon',
    VERSION_FROM      => $pmfile, # finds $VERSION, requires EU::MM from perl >= 5.5
    LICENSE           => 'gpl_3',
+   EXE_FILES => [
+       "bin/kamelon",
+       "bin/kamelon_analyze",
+       "bin/kamelon_bench",
+       "bin/kamelon_compile",
+       "bin/kamelon_debug_wx",
+       "bin/kamelon_hl_dumper",
+       "bin/kamelon_stepper",
+       "bin/kamelon_xml_updater",
+       "bin/kamelon_xml_viewer",
+       "bin/kamelonwxconsole",
+   ],
    PREREQ_PM         => {
       'Data::Dumper' => 0,
       'Module::Load::Conditional' => 0,
